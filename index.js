@@ -42,6 +42,7 @@ async function run(){
         })
 
         // use post to get products by ids
+        // use post to get products by ids
 
         app.post('/productByKeys',async(req, res )=>{
             const keys =req.body;
@@ -59,6 +60,9 @@ async function run(){
 }
 run().catch(console.dir);
 
+app.get('/ok',(req, res)=>{
+    res.send('ema-john ok')
+})
 app.get('/',(req, res)=>{
     res.send('ema-john running')
 })
